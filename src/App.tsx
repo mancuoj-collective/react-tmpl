@@ -1,6 +1,4 @@
-import './App.css'
-
-function App() {
+export default function App() {
   return (
     <>
       <h1 className="h-screen flex justify-center items-center gap-5 font-bold font-serif text-3xl text-blue-600">
@@ -10,5 +8,3 @@ function App() {
     </>
   )
 }
-
-export default App
