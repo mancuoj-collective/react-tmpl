@@ -19,6 +19,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
     "@iconify/json": "^2.2.136",
+    "@types/node": "^20.8.10",
     "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
     "@vitejs/plugin-react-swc": "^3.4.0",
