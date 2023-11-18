@@ -37,5 +37,13 @@
     "json",
     "jsonc",
     "yaml"
+  ],
+
+  "cSpell.words": [
+    "antfu",
+    "iconify",
+    "tailwindcss",
+    "taze",
+    "tmpl"
   ]
 }
