@@ -19,7 +19,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
-    "@iconify/json": "^2.2.143",
+    "@iconify-json/carbon": "^1.1.21",
+    "@iconify-json/lucide": "^1.1.141",
     "@types/node": "^20.9.1",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
