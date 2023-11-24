@@ -45,6 +45,8 @@
     "lucide",
     "tailwindcss",
     "taze",
-    "tmpl"
+    "tmpl",
+    "uidotdev",
+    "usehooks"
   ]
 }
