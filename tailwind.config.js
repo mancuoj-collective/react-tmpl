@@ -10,9 +10,23 @@ export default {
     extend: {},
   },
   plugins: [
+    // https://github.com/egoist/tailwindcss-icons
     iconsPlugin({
-      // https://github.com/egoist/tailwindcss-icons
       collections: getIconCollections(['lucide', 'carbon']),
     }),
+    // https://tailwindcss.com/docs/typography-plugin
+    require('@tailwindcss/typography'),
+    require('daisyui'),
   ],
+  daisyui: {
+    // https://daisyui.com/docs/config
+    themes: true,
+    darkTheme: 'black',
+    base: true,
+    styled: true,
+    utils: true,
+    prefix: '',
+    logs: true,
+    themeRoot: ':root',
+  },
 }
