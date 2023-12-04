@@ -21,7 +21,7 @@ export default {
   daisyui: {
     // https://daisyui.com/docs/config
     themes: true,
-    darkTheme: 'black',
+    darkTheme: 'sunset',
     base: true,
     styled: true,
     utils: true,
