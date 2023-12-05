@@ -18,8 +18,8 @@
     "@iconify-json/carbon": "^1.1.24",
     "@iconify-json/lucide": "^1.1.144",
     "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "^20.10.2",
-    "@types/react": "^18.2.41",
+    "@types/node": "^20.10.3",
+    "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.16",
@@ -28,13 +28,13 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "lint-staged": "^15.1.0",
+    "lint-staged": "^15.2.0",
     "postcss": "^8.4.32",
     "simple-git-hooks": "^2.9.0",
-    "tailwindcss": "^3.3.5",
+    "tailwindcss": "^3.3.6",
     "taze": "^0.13.0",
     "typescript": "^5.3.2",
-    "vite": "^5.0.4"
+    "vite": "^5.0.5"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
