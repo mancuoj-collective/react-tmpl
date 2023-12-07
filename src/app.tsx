@@ -5,7 +5,7 @@ export default function App() {
 
   return (
     <div className="h-screen flex flex-col justify-center items-center gap-5 font-serif select-none">
-      <h1 className="font-bold text-3xl">
+      <h1 className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-rose-900 to-teal-900 dark:from-rose-100 dark:to-teal-100">
         Hello
         {' '}
         {text}
