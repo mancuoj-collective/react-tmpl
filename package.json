@@ -16,11 +16,11 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
-    "@iconify-json/carbon": "^1.1.24",
+    "@iconify-json/carbon": "^1.1.25",
     "@iconify-json/lucide": "^1.1.144",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20.10.4",
-    "@types/react": "^18.2.42",
+    "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.16",
@@ -36,7 +36,7 @@
     "tailwindcss-animate": "^1.0.7",
     "taze": "^0.13.0",
     "typescript": "^5.3.3",
-    "vite": "^5.0.6"
+    "vite": "^5.0.7"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
