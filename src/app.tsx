@@ -1,12 +1,13 @@
+import type { FC } from 'react'
 import { useState } from 'react'
 import { ThemeProvider } from '@/components/theme-provider'
 
-export default function App() {
+const App: FC = () => {
   const [text, setText] = useState('React')
 
   return (
     <ThemeProvider>
-      <div className="h-screen flex flex-col justify-center items-center gap-5 font-serif">
+      <div className="h-dvh flex flex-col justify-center items-center gap-5 font-serif">
         <h1 className="font-bold text-3xl">
           Hello
           {' '}
@@ -22,3 +23,5 @@ export default function App() {
     </ThemeProvider>
   )
 }
+
+export default App
