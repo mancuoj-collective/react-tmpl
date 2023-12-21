@@ -4,13 +4,9 @@ Built on the following stack:
 
 - React
 - Vite
-- Bun
-- Typescript
 - Tailwind CSS
 - React Router
 - Antfu's Eslint Config
-- Simple-git-hooks + lint-staged
-- Taze
 
 ## Usage
 
