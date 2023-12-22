@@ -12,12 +12,12 @@
     "@egoist/tailwindcss-icons": "^1.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.0"
+    "react-router-dom": "^6.21.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
     "@iconify-json/carbon": "^1.1.27",
-    "@iconify-json/lucide": "^1.1.147",
+    "@iconify-json/lucide": "^1.1.148",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20.10.5",
