@@ -11,10 +11,7 @@ export default {
   },
   plugins: [
     iconsPlugin({
-      collections: getIconCollections(['lucide', 'carbon']),
+      collections: getIconCollections(['lucide']),
     }),
-    require('tailwindcss-animate'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
   ],
 }
