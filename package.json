@@ -17,7 +17,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
     "@iconify-json/carbon": "^1.1.27",
-    "@iconify-json/lucide": "^1.1.148",
+    "@iconify-json/lucide": "^1.1.149",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20.10.5",

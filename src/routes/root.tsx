@@ -9,9 +9,7 @@ const Root: FC = () => {
     <div className="h-dvh flex flex-col justify-center items-center gap-5 font-serif overflow-hidden">
       <h1 className="font-bold text-3xl">{text}</h1>
       <input className="max-w-xs w-full" value={text} onChange={e => setText(e.target.value)} />
-      <div>
-        <Outlet />
-      </div>
+      <Outlet />
     </div>
   )
 }
