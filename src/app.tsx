@@ -1,10 +1,7 @@
-import type { FC } from 'react'
 import { useState } from 'react'
-import { Outlet, useNavigation } from 'react-router-dom'
 
-const Root: FC = () => {
+export default function App() {
   const [text, setText] = useState('We will rock you')
-  const navigation = useNavigation()
 
   return (
     <div className="flex h-dvh flex-col items-center justify-center gap-5 overflow-hidden font-serif">
@@ -17,12 +14,6 @@ const Root: FC = () => {
         value={text}
         onChange={e => setText(e.target.value)}
       />
-
-      <div id="detail" className={navigation.state === 'loading' ? 'loading' : ''}>
-        <Outlet />
-      </div>
     </div>
   )
 }
-
-export default Root
