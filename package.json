@@ -9,14 +9,14 @@
     "postinstall": "simple-git-hooks"
   },
   "dependencies": {
-    "@egoist/tailwindcss-icons": "^1.7.1",
+    "@egoist/tailwindcss-icons": "^1.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
-    "@iconify-json/lucide": "^1.1.151",
-    "@types/react": "^18.2.46",
+    "@iconify-json/lucide": "^1.1.153",
+    "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.16",
