@@ -10,6 +10,7 @@ export default {
     extend: {},
   },
   plugins: [
+    require('tailwindcss-animate'),
     iconsPlugin({
       collections: getIconCollections(['lucide']),
     }),
