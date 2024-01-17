@@ -17,9 +17,9 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
-    "@iconify-json/lucide": "^1.1.154",
-    "@types/node": "^20.11.0",
-    "@types/react": "^18.2.47",
+    "@iconify-json/lucide": "^1.1.155",
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.16",
