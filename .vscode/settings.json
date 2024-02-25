@@ -1,6 +1,6 @@
 {
-  "eslint.experimental.useFlatConfig": true,
   "editor.formatOnSave": false,
+  "eslint.experimental.useFlatConfig": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
@@ -21,14 +21,6 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact",
-    "json",
-    "jsonc"
-  ],
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-  "editor.quickSuggestions": {
-    "strings": "on"
-  }
+    "typescriptreact"
+  ]
 }
