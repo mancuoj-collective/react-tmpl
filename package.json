@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.0",
-    "framer-motion": "^11.0.6",
+    "framer-motion": "^11.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.2.1"
@@ -18,9 +18,9 @@
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
     "@egoist/tailwindcss-icons": "^1.7.4",
-    "@iconify-json/lucide": "^1.1.169",
-    "@types/node": "^20.11.20",
-    "@types/react": "^18.2.58",
+    "@iconify-json/lucide": "^1.1.170",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react-swc": "^3.6.0",
     "autoprefixer": "^10.4.17",
