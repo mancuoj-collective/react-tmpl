@@ -5,7 +5,6 @@
     "build": "tsc && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "deps:upgrade": "taze -wi",
     "postinstall": "simple-git-hooks"
   },
   "dependencies": {
@@ -19,14 +18,14 @@
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
     "@egoist/tailwindcss-icons": "^1.7.4",
-    "@iconify-json/lucide": "^1.1.170",
+    "@iconify-json/lucide": "^1.1.171",
     "@types/node": "^20.11.24",
-    "@types/react": "^18.2.61",
+    "@types/react": "^18.2.63",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react-swc": "^3.6.0",
     "autoprefixer": "^10.4.18",
     "eslint": "npm:eslint-ts-patch",
-    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-ts-patch": "^8.57.0-0",
@@ -34,9 +33,8 @@
     "postcss": "^8.4.35",
     "simple-git-hooks": "^2.10.0",
     "tailwindcss": "^3.4.1",
-    "taze": "^0.13.3",
     "typescript": "^5.3.3",
-    "vite": "^5.1.4"
+    "vite": "^5.1.5"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
