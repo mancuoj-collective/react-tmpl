@@ -8,17 +8,17 @@
     "postinstall": "simple-git-hooks"
   },
   "dependencies": {
-    "clsx": "^2.1.0",
     "framer-motion": "^11.0.8",
     "jotai": "^2.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwind-merge": "^2.2.1"
+    "tailwind-merge": "^2.2.1",
+    "ts-clsx": "^1.2.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
     "@egoist/tailwindcss-icons": "^1.7.4",
-    "@iconify-json/lucide": "^1.1.172",
+    "@iconify-json/lucide": "^1.1.173",
     "@types/node": "^20.11.25",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
