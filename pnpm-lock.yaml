@@ -21,8 +21,8 @@ dependencies:
     specifier: ^2.2.2
     version: 2.2.2
   ts-clsx:
-    specifier: 2.1.0
-    version: 2.1.0
+    specifier: 2.2.0
+    version: 2.2.0
 
 devDependencies:
   '@antfu/eslint-config':
@@ -4234,8 +4234,8 @@ packages:
       typescript: 5.4.2
     dev: true
 
-  /ts-clsx@2.1.0:
-    resolution: {integrity: sha512-KUtobEVgnB/sIXc4sgmijkXI9lLCSO/2v/KNElHjmi6AkdX+t+9neHNlLjA7Zex6cwsJnNo1hYSURsMhUZIEKw==}
+  /ts-clsx@2.2.0:
+    resolution: {integrity: sha512-tF+4Qx0EnNYllOGP24sJvE3WFRSDaQhcASNF9NqVjTsXZEBGBzMqqM+g2cRagbo2VZ3aMMq/3TFvS9r4OCJm8g==}
     dev: false
 
   /ts-interface-checker@0.1.13:
