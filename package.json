@@ -13,13 +13,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.2.2",
-    "ts-clsx": "^2.0.0"
+    "ts-clsx": "2.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "1.0.0-beta.27",
     "@egoist/tailwindcss-icons": "^1.7.4",
     "@iconify-json/lucide": "^1.1.175",
-    "@types/node": "^20.11.29",
+    "@types/node": "^20.11.30",
     "@types/react": "^18.2.67",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react-swc": "^3.6.0",
