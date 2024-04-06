@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
-    "framer-motion": "^11.0.24",
+    "framer-motion": "^11.0.25",
     "jotai": "^2.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -17,10 +17,10 @@
     "ts-clsx": "2.2.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.12.1",
+    "@antfu/eslint-config": "^2.12.2",
     "@egoist/tailwindcss-icons": "^1.7.4",
     "@iconify-json/lucide": "^1.1.179",
-    "@types/node": "^20.12.4",
+    "@types/node": "^20.12.5",
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.24",
     "@vitejs/plugin-react-swc": "^3.6.0",
