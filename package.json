@@ -9,20 +9,20 @@
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
-    "framer-motion": "^11.0.25",
-    "jotai": "^2.7.2",
+    "framer-motion": "^11.0.28",
+    "jotai": "^2.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.2.2",
-    "ts-clsx": "2.2.0"
+    "ts-clsx": "2.4.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.12.2",
+    "@antfu/eslint-config": "^2.13.3",
     "@egoist/tailwindcss-icons": "^1.7.4",
-    "@iconify-json/lucide": "^1.1.179",
-    "@types/node": "^20.12.5",
-    "@types/react": "^18.2.74",
-    "@types/react-dom": "^18.2.24",
+    "@iconify-json/lucide": "^1.1.181",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.78",
+    "@types/react-dom": "^18.2.25",
     "@vitejs/plugin-react-swc": "^3.6.0",
     "autoprefixer": "^10.4.19",
     "eslint": "npm:eslint-ts-patch",
@@ -35,7 +35,7 @@
     "postcss": "^8.4.38",
     "simple-git-hooks": "^2.11.1",
     "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.4",
+    "typescript": "^5.4.5",
     "vite": "^5.2.8"
   },
   "simple-git-hooks": {
