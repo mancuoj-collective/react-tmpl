@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons'
 import tailwindcssAnimate from 'tailwindcss-animate'
 
 const config = {
@@ -75,7 +76,12 @@ const config = {
       },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [
+    iconsPlugin({
+      collections: getIconCollections(['lucide']),
+    }),
+    tailwindcssAnimate,
+  ],
 } satisfies Config
 
 export default config
