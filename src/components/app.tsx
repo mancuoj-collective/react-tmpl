@@ -1,11 +1,12 @@
-import { Button } from '@/components/ui/button'
+import { ThemeToggle } from './theme-toggle'
+import { ThemeProvider } from '@/components/theme-provider'
 
 export default function App() {
   return (
-    <div className="flex h-dvh flex-col items-center justify-center font-serif">
-      <Button className="text-xl font-bold">
-        Hello World
-      </Button>
-    </div>
+    <ThemeProvider defaultTheme="dark" storageKey="react-tmpl">
+      <div className="flex h-dvh flex-col items-center justify-center font-serif">
+        <ThemeToggle />
+      </div>
+    </ThemeProvider>
   )
 }
