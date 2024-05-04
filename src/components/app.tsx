@@ -1,5 +1,5 @@
 import { ThemeToggle } from './theme-toggle'
-import { ThemeProvider } from '@/components/theme-provider'
+import { ThemeProvider } from '~/components/theme-provider'
 
 export default function App() {
   return (
