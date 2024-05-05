@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons'
 import tailwindcssAnimate from 'tailwindcss-animate'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config = {
   darkMode: ['class'],
@@ -20,6 +21,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"Inter Variable"', ...defaultTheme.fontFamily.sans],
+        serif: ['"Source Serif 4 Variable"', ...defaultTheme.fontFamily.serif],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
