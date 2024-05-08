@@ -1,5 +1,4 @@
 import { Link, Outlet, createRootRoute } from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 import { ThemeToggle } from '~/components/theme-toggle'
 import { Toaster } from '~/components/ui/sonner'
 
@@ -13,10 +12,10 @@ function Navbar() {
       <div className="container flex h-14 items-center justify-between">
         <Link to="/" className="i-lucide-layout-template size-6" />
         <nav className="flex gap-3">
-          <Link to="/" className="[&.active]:font-bold">
+          <Link to="/" className="text-foreground/75 [&.active]:text-foreground">
             Home
           </Link>
-          <Link to="/about" className="[&.active]:font-bold">
+          <Link to="/about" className="text-foreground/75 [&.active]:text-foreground">
             About
           </Link>
         </nav>
@@ -40,7 +39,6 @@ function Root() {
       <Navbar />
       <Main />
       <Toaster />
-      <TanStackRouterDevtools />
     </div>
   )
 }
