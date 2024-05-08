@@ -1,6 +1,6 @@
-import { Link, Outlet, createRootRoute } from '@tanstack/react-router'
-import { ThemeToggle } from '~/components/theme-toggle'
-import { Toaster } from '~/components/ui/sonner'
+import { Link, Outlet, createRootRoute } from "@tanstack/react-router"
+import { ThemeToggle } from "~/components/theme-toggle"
+import { Toaster } from "~/components/ui/sonner"
 
 export const Route = createRootRoute({
   component: Root,
