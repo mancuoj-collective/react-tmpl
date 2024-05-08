@@ -6,8 +6,8 @@ export const Route = createFileRoute('/')({
 
 function Index() {
   return (
-    <div>
-      <h1>Hello from Home!</h1>
+    <div className="text-center">
+      <span className="i-lucide-smile size-20" />
     </div>
   )
 }
