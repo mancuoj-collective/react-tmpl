@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "biome check --apply ."
+    "lint": "biome check --apply ./src"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.0.18",

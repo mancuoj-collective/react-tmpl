@@ -3,8 +3,7 @@
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
-    "lineWidth": 120,
-    "ignore": ["src/routeTree.gen.ts"]
+    "lineWidth": 120
   },
   "javascript": {
     "formatter": {
@@ -20,10 +19,22 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "complexity": {
+        "noVoid": "error",
+        "noExcessiveCognitiveComplexity": "warn",
+        "useSimplifiedLogicExpression": "warn"
+      },
+      "correctness": {
+        "useHookAtTopLevel": "error"
+      },
       "style": {
-        "noNonNullAssertion": "off"
+        "noNonNullAssertion": "off",
+        "useForOf": "warn"
       }
-    },
+    }
+  },
+  "files": {
+    "ignoreUnknown": true,
     "ignore": ["src/routeTree.gen.ts"]
   }
 }
