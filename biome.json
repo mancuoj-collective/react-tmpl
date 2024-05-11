@@ -1,5 +1,9 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
+  "files": {
+    "ignoreUnknown": true,
+    "ignore": ["src/routeTree.gen.ts"]
+  },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
@@ -32,9 +36,5 @@
         "useForOf": "warn"
       }
     }
-  },
-  "files": {
-    "ignoreUnknown": true,
-    "ignore": ["src/routeTree.gen.ts"]
   }
 }
