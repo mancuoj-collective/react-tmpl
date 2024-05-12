@@ -1,5 +1,6 @@
 import { Link, Outlet, createRootRoute } from "@tanstack/react-router"
 import { ThemeToggle } from "~/components/theme-toggle"
+import RetroGrid from "~/components/ui/retro-grid"
 import { Toaster } from "~/components/ui/sonner"
 
 export const Route = createRootRoute({
@@ -23,6 +24,7 @@ function Root() {
           <Outlet />
         </main>
       </div>
+      <RetroGrid />
       <Toaster />
     </div>
   )
