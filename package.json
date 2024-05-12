@@ -41,7 +41,8 @@
   "devDependencies": {
     "@biomejs/biome": "1.7.3",
     "@egoist/tailwindcss-icons": "^1.8.0",
-    "@iconify-json/lucide": "^1.1.187",
+    "@iconify-json/carbon": "^1.1.32",
+    "@iconify-json/simple-icons": "^1.1.101",
     "@mancuoj/prettier-config": "^0.1.4",
     "@tanstack/router-vite-plugin": "^1.31.18",
     "@types/node": "^20.12.11",

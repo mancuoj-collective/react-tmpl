@@ -105,9 +105,12 @@ importers:
       '@egoist/tailwindcss-icons':
         specifier: ^1.8.0
         version: 1.8.0(tailwindcss@3.4.3)
-      '@iconify-json/lucide':
-        specifier: ^1.1.187
-        version: 1.1.187
+      '@iconify-json/carbon':
+        specifier: ^1.1.32
+        version: 1.1.32
+      '@iconify-json/simple-icons':
+        specifier: ^1.1.101
+        version: 1.1.101
       '@mancuoj/prettier-config':
         specifier: ^0.1.4
         version: 0.1.4(prettier@3.2.5)
@@ -558,8 +561,11 @@ packages:
     peerDependencies:
       react-hook-form: ^7.0.0
 
-  '@iconify-json/lucide@1.1.187':
-    resolution: {integrity: sha512-ToklgtHDm2Tb6WrXZOEubXx0bH3D2Tpp3LayIbmzF1c8IS0Fb/qLnISYiZ5UbQZMODwTB1Hj9RnGPl1O9W061A==}
+  '@iconify-json/carbon@1.1.32':
+    resolution: {integrity: sha512-9X8wVI7AmcnjTyOdDoCgyNwcFL9lb++nacDS2yLANTc27F4y9Q8pJIfUVsakR4KcGqSSBCyXwEmBDeopeTZFqA==}
+
+  '@iconify-json/simple-icons@1.1.101':
+    resolution: {integrity: sha512-7h7iUvCok031UcYUt2+wPD21tOwu/AzFB2I2PzzoC3R1jsNJjn5YV3v1q0g2CXcMYAzcsCyH00RbpFPFAiqjcw==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -2409,7 +2415,11 @@ snapshots:
     dependencies:
       react-hook-form: 7.51.4(react@18.3.1)
 
-  '@iconify-json/lucide@1.1.187':
+  '@iconify-json/carbon@1.1.32':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/simple-icons@1.1.101':
     dependencies:
       '@iconify/types': 2.0.0
 
