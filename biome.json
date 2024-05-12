@@ -5,16 +5,7 @@
     "ignore": ["src/routeTree.gen.ts"]
   },
   "formatter": {
-    "enabled": true,
-    "indentStyle": "space",
-    "lineWidth": 120
-  },
-  "javascript": {
-    "formatter": {
-      "arrowParentheses": "asNeeded",
-      "bracketSameLine": true,
-      "semicolons": "asNeeded"
-    }
+    "enabled": false
   },
   "organizeImports": {
     "enabled": true
