@@ -14,6 +14,9 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "suspicious": {
+        "noArrayIndexKey": "off"
+      },
       "complexity": {
         "noVoid": "error",
         "noExcessiveCognitiveComplexity": "warn",
