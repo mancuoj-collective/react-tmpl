@@ -92,7 +92,7 @@ const config = {
   },
   plugins: [
     iconsPlugin({
-      collections: getIconCollections(['carbon', 'simple-icons']),
+      collections: getIconCollections(['lucide', 'carbon', 'simple-icons']),
     }),
     tailwindcssAnimate,
   ],
