@@ -45,7 +45,7 @@
     "@iconify-json/carbon": "^1.1.33",
     "@iconify-json/lucide": "^1.1.187",
     "@iconify-json/simple-icons": "^1.1.101",
-    "@mancuoj/prettier-config": "^0.1.4",
+    "@mancuoj/prettier-config": "^0.2.0",
     "@tanstack/router-vite-plugin": "^1.32.2",
     "@types/node": "^20.12.12",
     "@types/react": "^18.3.2",

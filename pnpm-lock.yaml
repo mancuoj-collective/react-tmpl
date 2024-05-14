@@ -118,8 +118,8 @@ importers:
         specifier: ^1.1.101
         version: 1.1.101
       '@mancuoj/prettier-config':
-        specifier: ^0.1.4
-        version: 0.1.4(prettier@3.2.5)
+        specifier: ^0.2.0
+        version: 0.2.0(prettier@3.2.5)
       '@tanstack/router-vite-plugin':
         specifier: ^1.32.2
         version: 1.32.2(vite@5.2.11(@types/node@20.12.12))
@@ -595,8 +595,8 @@ packages:
     resolution: {integrity: sha512-f5DRIOZf7wxogefH03RjMPMdBF7ADTWUMoOs9kaJo06EfwF+aFhMZMDZxHg/Xe12hptN9xoZjGso2fdjapBRIA==}
     engines: {node: '>=10'}
 
-  '@mancuoj/prettier-config@0.1.4':
-    resolution: {integrity: sha512-X1/jfxjuelyaEU/rhU4giil7CPZSEazJ2po9dchSq3Q9dPjPScu7PxU8RJXEH+Mfpngpgjq8qiol2pc88XfxGg==}
+  '@mancuoj/prettier-config@0.2.0':
+    resolution: {integrity: sha512-SPlyjZ4Cs/2Tz2czZyo60401CG93glaNfXJysPA3bDKP8fuKmU3Sz8pRPvsDENVmYpELAE/nr8KYb0sYukiYdQ==}
     hasBin: true
     peerDependencies:
       prettier: ^3.2.5
@@ -2471,10 +2471,9 @@ snapshots:
       string-argv: 0.3.2
       type-detect: 4.0.8
 
-  '@mancuoj/prettier-config@0.1.4(prettier@3.2.5)':
+  '@mancuoj/prettier-config@0.2.0(prettier@3.2.5)':
     dependencies:
       '@antfu/install-pkg': 0.3.3
-      local-pkg: 0.5.0
       picocolors: 1.0.0
       prettier: 3.2.5
 
