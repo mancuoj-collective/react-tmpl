@@ -29,9 +29,9 @@ function Root() {
             <Outlet />
           </main>
         </div>
-        <Meteors />
-        <Toaster />
       </div>
+      <Meteors />
+      <Toaster />
     </ScrollArea>
   )
 }
