@@ -1,4 +1,4 @@
-import { QueryClient } from '@tanstack/react-query'
+import type { QueryClient } from '@tanstack/react-query'
 import { Link, Outlet, createRootRouteWithContext } from '@tanstack/react-router'
 import { ThemeToggle } from '~/components/theme-toggle'
 import { Meteors } from '~/components/ui/meteors'
