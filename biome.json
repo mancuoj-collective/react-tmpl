@@ -30,6 +30,9 @@
       "style": {
         "noNonNullAssertion": "off",
         "useForOf": "warn"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off"
       }
     }
   }
