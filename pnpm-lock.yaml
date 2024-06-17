@@ -48,8 +48,8 @@ importers:
         specifier: ^0.21.0
         version: 0.21.0(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-query':
-        specifier: ^5.45.0
-        version: 5.45.0(react@18.3.1)
+        specifier: ^5.45.1
+        version: 5.45.1(react@18.3.1)
       '@tanstack/react-router':
         specifier: ^1.38.1
         version: 1.38.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -118,11 +118,11 @@ importers:
         specifier: ^1.1.35
         version: 1.1.35
       '@iconify-json/lucide':
-        specifier: ^1.1.192
-        version: 1.1.192
+        specifier: ^1.1.193
+        version: 1.1.193
       '@iconify-json/simple-icons':
-        specifier: ^1.1.105
-        version: 1.1.105
+        specifier: ^1.1.106
+        version: 1.1.106
       '@mancuoj/prettier-config':
         specifier: ^0.2.0
         version: 0.2.0(prettier@3.3.2)
@@ -558,11 +558,11 @@ packages:
   '@iconify-json/carbon@1.1.35':
     resolution: {integrity: sha512-zKqioWceqFRiLJvxpjcCpVP3j2YcokYshlbwSAHBhOih5XNUymUS3hm1kpV4KljMI1xWH96UcozHaaf6x4YzdA==}
 
-  '@iconify-json/lucide@1.1.192':
-    resolution: {integrity: sha512-ulKR9JoaAT1pvsutNQe6jN4F3+9SNrXNp369LfZJUb8F368abgwiQapuNkN9UjVtU5dfn7g2uvuWisOYPMESdQ==}
+  '@iconify-json/lucide@1.1.193':
+    resolution: {integrity: sha512-W2vTXvOgogRAqEN1htpILhajn0xm93AUDfmgh3zRRobpPqYNwx91lE9oNBxvz8AY2dVaCzK9zZjC2/H25C5AIA==}
 
-  '@iconify-json/simple-icons@1.1.105':
-    resolution: {integrity: sha512-eSI32492Ga6IR7BhpDy222pSupqshZIVuYllaYHDO0MjmgVvfus5wgXb/U8RXpMZTpcQ/8dNcCK82LkupFqD4w==}
+  '@iconify-json/simple-icons@1.1.106':
+    resolution: {integrity: sha512-3aHpMAgc0UES/ecsCzaXhyBuJVy1AEC/IG03cso6KqvG+DJzrb3LT2ibTTB4uoGGPAmz/mq9df4LqYQhbSrHCA==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -1151,8 +1151,8 @@ packages:
     peerDependencies:
       react: ^17.0.0 || ^18.0.0
 
-  '@tanstack/react-query@5.45.0':
-    resolution: {integrity: sha512-y272cKRJp1BvehrWG4ashOBuqBj1Qm2O6fgYJ9LYSHrLdsCXl74GbSVjUQTReUdHuRIl9cEOoyPa6HYag400lw==}
+  '@tanstack/react-query@5.45.1':
+    resolution: {integrity: sha512-mYYfJujKg2kxmkRRjA6nn4YKG3ITsKuH22f1kteJ5IuVQqgKUgbaSQfYwVP0gBS05mhwxO03HVpD0t7BMN7WOA==}
     peerDependencies:
       react: ^18.0.0
 
@@ -2458,11 +2458,11 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/lucide@1.1.192':
+  '@iconify-json/lucide@1.1.193':
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/simple-icons@1.1.105':
+  '@iconify-json/simple-icons@1.1.106':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -3055,7 +3055,7 @@ snapshots:
       - '@types/react'
       - react-dom
 
-  '@tanstack/react-query@5.45.0(react@18.3.1)':
+  '@tanstack/react-query@5.45.1(react@18.3.1)':
     dependencies:
       '@tanstack/query-core': 5.45.0
       react: 18.3.1
