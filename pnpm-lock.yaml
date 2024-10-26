@@ -20,6 +20,15 @@ importers:
       clsx:
         specifier: latest
         version: 2.1.1
+      jotai:
+        specifier: latest
+        version: 2.10.1(@types/react@18.3.12)(react@18.3.1)
+      jotai-dark:
+        specifier: latest
+        version: 0.4.0(jotai-effect@1.0.3(jotai@2.10.1(@types/react@18.3.12)(react@18.3.1)))(jotai@2.10.1(@types/react@18.3.12)(react@18.3.1))(react@18.3.1)
+      jotai-effect:
+        specifier: latest
+        version: 1.0.3(jotai@2.10.1(@types/react@18.3.12)(react@18.3.1))
       react:
         specifier: latest
         version: 18.3.1
@@ -1635,6 +1644,37 @@ packages:
   jiti@2.3.3:
     resolution: {integrity: sha512-EX4oNDwcXSivPrw2qKH2LB5PoFxEvgtv2JgwW0bU858HoLQ+kutSvjLMUqBd0PeJYEinLWhoI9Ol0eYMqj/wNQ==}
     hasBin: true
+
+  jotai-dark@0.4.0:
+    resolution: {integrity: sha512-1RUmCRqzZFcFrVJwuG4BZ3kDPNjElFXA1FH8X77rPqhFDkSy79rpTrzfMBAx2pZauQvXBRQWN3fJ1p+CF2JO4g==}
+    peerDependencies:
+      jotai: '>=2.5.0'
+      jotai-effect: '*'
+      react: '>=18.2.0'
+    peerDependenciesMeta:
+      jotai:
+        optional: true
+      jotai-effect:
+        optional: true
+      react:
+        optional: true
+
+  jotai-effect@1.0.3:
+    resolution: {integrity: sha512-Xye6oVMQkhOmkF9G5gdtwlqG2w9GuMcfYdRS0aV/HeoYCj1LfLJ4O8jQRVT/Zb5hPGOLGNll/x6k5wxifn1jYg==}
+    peerDependencies:
+      jotai: '>=2.5.0'
+
+  jotai@2.10.1:
+    resolution: {integrity: sha512-4FycO+BOTl2auLyF2Chvi6KTDqdsdDDtpaL/WHQMs8f3KS1E3loiUShQzAzFA/sMU5cJ0hz/RT1xum9YbG/zaA==}
+    engines: {node: '>=12.20.0'}
+    peerDependencies:
+      '@types/react': '>=17.0.0'
+      react: '>=17.0.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      react:
+        optional: true
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -4128,6 +4168,21 @@ snapshots:
   jiti@2.0.0-beta.3: {}
 
   jiti@2.3.3: {}
+
+  jotai-dark@0.4.0(jotai-effect@1.0.3(jotai@2.10.1(@types/react@18.3.12)(react@18.3.1)))(jotai@2.10.1(@types/react@18.3.12)(react@18.3.1))(react@18.3.1):
+    optionalDependencies:
+      jotai: 2.10.1(@types/react@18.3.12)(react@18.3.1)
+      jotai-effect: 1.0.3(jotai@2.10.1(@types/react@18.3.12)(react@18.3.1))
+      react: 18.3.1
+
+  jotai-effect@1.0.3(jotai@2.10.1(@types/react@18.3.12)(react@18.3.1)):
+    dependencies:
+      jotai: 2.10.1(@types/react@18.3.12)(react@18.3.1)
+
+  jotai@2.10.1(@types/react@18.3.12)(react@18.3.1):
+    optionalDependencies:
+      '@types/react': 18.3.12
+      react: 18.3.1
 
   js-tokens@4.0.0: {}
 
