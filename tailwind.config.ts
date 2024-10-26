@@ -1,4 +1,6 @@
+import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons'
 import type { Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme'
 import tailwindcssAnimate from 'tailwindcss-animate'
 
 export default {
@@ -6,6 +8,11 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["'Inter Variable'", ...defaultTheme.fontFamily.sans],
+        lora: ["'Lora Variable'", ...defaultTheme.fontFamily.serif],
+        fira: ["'Fira Code Variable'", ...defaultTheme.fontFamily.mono],
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
@@ -55,5 +62,7 @@ export default {
       },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [tailwindcssAnimate, iconsPlugin({
+    collections: getIconCollections(['tabler']),
+  })],
 } satisfies Config

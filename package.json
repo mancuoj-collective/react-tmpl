@@ -12,13 +12,17 @@
     "@radix-ui/react-slot": "latest",
     "class-variance-authority": "latest",
     "clsx": "latest",
-    "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
     "tailwind-merge": "latest",
     "tailwindcss-animate": "latest"
   },
   "devDependencies": {
+    "@egoist/tailwindcss-icons": "latest",
+    "@fontsource-variable/fira-code": "latest",
+    "@fontsource-variable/inter": "latest",
+    "@fontsource-variable/lora": "latest",
+    "@iconify-json/tabler": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
