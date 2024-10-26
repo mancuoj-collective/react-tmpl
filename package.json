@@ -10,6 +10,8 @@
   "dependencies": {
     "@radix-ui/react-icons": "latest",
     "@radix-ui/react-slot": "latest",
+    "@tanstack/react-query": "latest",
+    "@tanstack/react-query-devtools": "latest",
     "class-variance-authority": "latest",
     "clsx": "latest",
     "jotai": "latest",
