@@ -1,7 +1,10 @@
-import { Landing } from './routes/landing'
+import { AppProvider } from './provider'
+import { AppRouter } from './router'
 
 export function App() {
   return (
-    <Landing />
+    <AppProvider>
+      <AppRouter />
+    </AppProvider>
   )
 }

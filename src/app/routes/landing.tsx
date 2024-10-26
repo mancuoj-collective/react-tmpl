@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 
-export function Landing() {
+export function LandingRoute() {
   return (
     <div className="font-inter antialiased">
       <div className="flex min-h-screen items-center justify-center gap-2">
