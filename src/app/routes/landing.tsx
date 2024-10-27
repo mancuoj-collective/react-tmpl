@@ -1,4 +1,5 @@
 import { DarkModeToggle } from '@/components/layout/dark-mode-toggle'
+import { Head } from '@/components/seo/head'
 import { Button } from '@/components/ui/button'
 import { Cobe } from '@/components/ui/cobe'
 import Particles from '@/components/ui/particles'
@@ -65,13 +66,16 @@ function Hero() {
 
 export function LandingRoute() {
   return (
-    <div className="font-inter antialiased">
-      <div className="flex min-h-screen flex-col">
-        <Header />
-        <div className="flex flex-1 flex-col items-center justify-center">
-          <Hero />
+    <>
+      <Head description="Welcome to React Tmpl" />
+      <div className="font-inter antialiased">
+        <div className="flex min-h-screen flex-col">
+          <Header />
+          <div className="flex flex-1 flex-col items-center justify-center">
+            <Hero />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
