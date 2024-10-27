@@ -74,7 +74,8 @@ export function Cobe({
       height: width * 2,
       onRender: (state) => {
         if (!pointerInteracting.current) {
-          phi += 0.005
+          // rotate speed
+          phi += 0.002
         }
         state.phi = phi + r.get()
         state.width = width * 2
@@ -89,7 +90,7 @@ export function Cobe({
       globe.destroy()
       window.removeEventListener('resize', onResize)
     }
-  }, [config, r])
+  }, [])
 
   function updatePointerInteraction(clientX: number | null) {
     if (clientX !== null) {
