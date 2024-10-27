@@ -1,4 +1,4 @@
-import { ThemeToggle } from '@/components/layout/theme-toggle'
+import { DarkModeToggle } from '@/components/layout/dark-mode-toggle'
 import { Button } from '@/components/ui/button'
 import { Cobe } from '@/components/ui/cobe'
 import Particles from '@/components/ui/particles'
@@ -13,7 +13,7 @@ function Header() {
           React Tmpl
         </a>
         <div className="flex gap-0.5">
-          <ThemeToggle />
+          <DarkModeToggle />
           <Button variant="ghost" size="icon" asChild>
             <a href="https://github.com/mancuoj-collective/react-tmpl" target="_blank" rel="noreferrer">
               <div className="i-tabler-brand-github text-lg" />

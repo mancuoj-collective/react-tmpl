@@ -29,6 +29,9 @@ importers:
       cobe:
         specifier: latest
         version: 0.6.3
+      foxact:
+        specifier: latest
+        version: 0.2.40(react@18.3.1)
       jotai:
         specifier: latest
         version: 2.10.1(@types/react@18.3.12)(react@18.3.1)
@@ -2006,6 +2009,9 @@ packages:
     resolution: {integrity: sha512-nPdaFdQ0h/GEigbPClz11D0v/ZJEwxmeVZGeMo3Z5StPtUTkA9o1lD6QwoirYiSDzbcwn2XcjwmCp68W1IS4TA==}
     engines: {node: '>=18'}
 
+  client-only@0.0.1:
+    resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+
   cliui@8.0.1:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
     engines: {node: '>=12'}
@@ -2522,6 +2528,14 @@ packages:
   foreground-child@3.3.0:
     resolution: {integrity: sha512-Ld2g8rrAyMYFXBhEqMz8ZAHBi4J4uS1i/CxGMDnjyFWddMXLVcDp051DZfu+t7+ab7Wv6SMqpWmyFIj5UbfFvg==}
     engines: {node: '>=14'}
+
+  foxact@0.2.40:
+    resolution: {integrity: sha512-XqgFJ5vpTUL9SPAEmFFRiJtJ5B52f3GtGW+VAs7nTIMIrz9OsyUr72YrBMNfP9bINL6lPd5KrO3xz7gNcvybzw==}
+    peerDependencies:
+      react: '*'
+    peerDependenciesMeta:
+      react:
+        optional: true
 
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
@@ -3733,6 +3747,9 @@ packages:
   serve-static@1.16.2:
     resolution: {integrity: sha512-VqpjJZKadQB/PEbEwvFdO43Ax5dFBZ2UECszz8bQ7pi7wt//PWe1P6MN7eCnjsatYtBT6EuiClbjSWP2WrIoTw==}
     engines: {node: '>= 0.8.0'}
+
+  server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
 
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
@@ -6445,6 +6462,8 @@ snapshots:
       slice-ansi: 5.0.0
       string-width: 7.2.0
 
+  client-only@0.0.1: {}
+
   cliui@8.0.1:
     dependencies:
       string-width: 4.2.3
@@ -7118,6 +7137,13 @@ snapshots:
     dependencies:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
+
+  foxact@0.2.40(react@18.3.1):
+    dependencies:
+      client-only: 0.0.1
+      server-only: 0.0.1
+    optionalDependencies:
+      react: 18.3.1
 
   fraction.js@4.3.7: {}
 
@@ -8499,6 +8525,8 @@ snapshots:
       send: 0.19.0
     transitivePeerDependencies:
       - supports-color
+
+  server-only@0.0.1: {}
 
   setprototypeof@1.2.0: {}
 
