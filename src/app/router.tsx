@@ -12,6 +12,20 @@ function createAppRouter(_queryClient: QueryClient) {
         return { Component: LandingRoute }
       },
     },
+    {
+      path: '/auth/login',
+      lazy: async () => {
+        const { LoginRoute } = await import('./auth/login')
+        return { Component: LoginRoute }
+      },
+    },
+    {
+      path: '/auth/register',
+      lazy: async () => {
+        const { RegisterRoute } = await import('./auth/register')
+        return { Component: RegisterRoute }
+      },
+    },
   ])
 }
 

@@ -1,33 +1,19 @@
-import { DarkModeToggle } from '@/components/layout/dark-mode-toggle'
-import { Head } from '@/components/seo/head'
+import { useNavigate } from 'react-router-dom'
+
+import { Header } from '@/components/layout'
+import { Head } from '@/components/seo'
 import { Button } from '@/components/ui/button'
 import { Cobe } from '@/components/ui/cobe'
 import Particles from '@/components/ui/particles'
 import { useDark } from '@/hooks/use-dark'
 
-function Header() {
-  return (
-    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-lg">
-      <div className="flex h-16 items-center justify-between gap-2 px-4 md:px-12">
-        <a href="/" className="flex items-center gap-2 font-lora text-lg font-semibold">
-          <span className="i-tabler-brand-react text-xl" />
-          React Tmpl
-        </a>
-        <div className="flex gap-0.5">
-          <DarkModeToggle />
-          <Button variant="ghost" size="icon" asChild>
-            <a href="https://github.com/mancuoj-collective/react-tmpl" target="_blank" rel="noreferrer">
-              <div className="i-tabler-brand-github text-lg" />
-            </a>
-          </Button>
-        </div>
-      </div>
-    </header>
-  )
-}
-
 function Hero() {
   const { isDark } = useDark()
+  const navigate = useNavigate()
+
+  function handleStart() {
+    navigate('/auth/login')
+  }
 
   return (
     <div className="relative mx-auto flex min-h-[52rem] max-w-[800px] flex-col items-center justify-center gap-2 p-12 md:p-28">
@@ -50,7 +36,7 @@ function Hero() {
         The Latest React Starter Template
       </h1>
       <div className="flex items-center gap-2">
-        <Button>
+        <Button onClick={handleStart}>
           Get Started
         </Button>
         <Button variant="outline" asChild className="gap-1">
@@ -68,12 +54,10 @@ export function LandingRoute() {
   return (
     <>
       <Head description="Welcome to React Tmpl" />
-      <div className="font-inter antialiased">
-        <div className="flex min-h-screen flex-col">
-          <Header />
-          <div className="flex flex-1 flex-col items-center justify-center">
-            <Hero />
-          </div>
+      <div className="flex min-h-screen flex-col">
+        <Header />
+        <div className="flex flex-1 flex-col items-center justify-center">
+          <Hero />
         </div>
       </div>
     </>
