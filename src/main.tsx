@@ -1,4 +1,5 @@
-import './globals.css'
+import './styles/globals.css'
+import './styles/themes.css'
 import '@fontsource-variable/inter'
 import '@fontsource-variable/lora'
 import '@fontsource-variable/fira-code'

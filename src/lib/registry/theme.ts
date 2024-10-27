@@ -754,3 +754,5 @@ export const themes = [
 ] as const
 
 export type Theme = (typeof themes)[number]
+export const builtinThemes = themes.map(theme => theme.name)
+export const builtinRadiuses = [0, 0.3, 0.5, 0.75, 1] as const
