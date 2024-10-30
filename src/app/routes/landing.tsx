@@ -26,7 +26,7 @@ function Hero() {
   const navigate = useNavigate()
 
   function handleStart() {
-    navigate('/auth/login')
+    navigate('/auth/sign-in')
   }
 
   return (

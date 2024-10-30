@@ -6,13 +6,15 @@ interface AuthLayoutProps extends React.ComponentProps<'div'> {
 
 export function AuthLayout({ children, title }: AuthLayoutProps) {
   return (
-    <div>
+    <>
       <Head title={title} />
-      <div className="flex min-h-dvh flex-col">
-        <div className="flex flex-1 flex-col items-center justify-center">
+      <div className="grid min-h-dvh grid-cols-[1fr_min(440px,calc(100%_-_64px))_1fr] gap-x-8">
+        <div className="col-[2] flex flex-col items-center pt-36">
+          <div className="i-tabler-brand-react text-5xl" />
+          <h1 className="mb-5 mt-4 text-2xl font-semibold">{title}</h1>
           {children}
         </div>
       </div>
-    </div>
+    </>
   )
 }

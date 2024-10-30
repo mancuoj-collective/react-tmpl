@@ -63,6 +63,6 @@ export default {
     },
   },
   plugins: [tailwindcssAnimate, iconsPlugin({
-    collections: getIconCollections(['tabler']),
+    collections: getIconCollections(['tabler', 'devicon']),
   })],
 } satisfies Config

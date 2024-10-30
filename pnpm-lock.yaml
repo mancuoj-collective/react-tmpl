@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@hookform/resolvers':
+        specifier: latest
+        version: 3.9.1(react-hook-form@7.53.1(react@18.3.1))
       '@radix-ui/react-icons':
         specifier: latest
         version: 1.3.0(react@18.3.1)
+      '@radix-ui/react-label':
+        specifier: latest
+        version: 2.1.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-popover':
         specifier: latest
         version: 1.1.2(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -53,6 +59,9 @@ importers:
       react-helmet-async:
         specifier: latest
         version: 2.0.5(react@18.3.1)
+      react-hook-form:
+        specifier: latest
+        version: 7.53.1(react@18.3.1)
       react-router-dom:
         specifier: latest
         version: 6.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -65,6 +74,9 @@ importers:
       tailwindcss-animate:
         specifier: latest
         version: 1.0.7(tailwindcss@3.4.14)
+      zod:
+        specifier: latest
+        version: 3.23.8
     devDependencies:
       '@egoist/tailwindcss-icons':
         specifier: latest
@@ -78,6 +90,9 @@ importers:
       '@fontsource-variable/lora':
         specifier: latest
         version: 5.1.0
+      '@iconify-json/devicon':
+        specifier: latest
+        version: 1.2.4
       '@iconify-json/tabler':
         specifier: latest
         version: 1.2.6
@@ -1221,6 +1236,11 @@ packages:
   '@fontsource-variable/lora@5.1.0':
     resolution: {integrity: sha512-dYb/q3hMuabXDy3yHTtjIn+nzYIJ+jguULrPelHPBfGFlvwTI0HAETP+tZm/0aRISD7q2nWTK3tQA8GFZRDTmg==}
 
+  '@hookform/resolvers@3.9.1':
+    resolution: {integrity: sha512-ud2HqmGBM0P0IABqoskKWI6PEf6ZDDBZkFqe2Vnl+mTHCEHzr3ISjjZyCwTjC/qpL25JC9aIDkloQejvMeq0ug==}
+    peerDependencies:
+      react-hook-form: ^7.0.0
+
   '@humanfs/core@0.19.0':
     resolution: {integrity: sha512-2cbWIHbZVEweE853g8jymffCA+NCMiuqeECeBBLm8dg2oFdjuGJhgN4UAbI+6v0CKbbhvtXA4qV8YR5Ji86nmw==}
     engines: {node: '>=18.18.0'}
@@ -1242,6 +1262,9 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
+
+  '@iconify-json/devicon@1.2.4':
+    resolution: {integrity: sha512-DrYBFGycCW2wAloxxHEDIFuqv9lUYIn6FVbSx/l7ZqhO9rDtD8jLECS+mfn/BTRBs4/uH8wzB0sYPHXulP8aLQ==}
 
   '@iconify-json/tabler@1.2.6':
     resolution: {integrity: sha512-+LjRsbx4tqaLNorQldahZRCepYVAC8Fj6hpkHuZFWB0xj81YasACT0f9JGtavG4+LePdvkXRTuz5RQOU6YcnXA==}
@@ -1423,6 +1446,19 @@ packages:
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       '@types/react':
+        optional: true
+
+  '@radix-ui/react-label@2.1.0':
+    resolution: {integrity: sha512-peLblDlFw/ngk3UWq0VnYaOLy6agTZZ+MUO/WhVfm14vJGML+xH4FAl2XQGLqdefjNb7ApRg6Yn7U42ZhmYXdw==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
         optional: true
 
   '@radix-ui/react-popover@1.1.2':
@@ -3752,6 +3788,12 @@ packages:
     peerDependencies:
       react: ^16.6.0 || ^17.0.0 || ^18.0.0
 
+  react-hook-form@7.53.1:
+    resolution: {integrity: sha512-6aiQeBda4zjcuaugWvim9WsGqisoUk+etmFEsSUMm451/Ic8L/UAb7sRtMj3V+Hdzm6mMjU1VhiSzYUZeBm0Vg==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18 || ^19
+
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
 
@@ -5777,6 +5819,10 @@ snapshots:
 
   '@fontsource-variable/lora@5.1.0': {}
 
+  '@hookform/resolvers@3.9.1(react-hook-form@7.53.1(react@18.3.1))':
+    dependencies:
+      react-hook-form: 7.53.1(react@18.3.1)
+
   '@humanfs/core@0.19.0': {}
 
   '@humanfs/node@0.16.5':
@@ -5804,6 +5850,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@iconify-json/devicon@1.2.4':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify-json/tabler@1.2.6':
     dependencies:
@@ -6005,6 +6055,15 @@ snapshots:
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.12
+
+  '@radix-ui/react-label@2.1.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@radix-ui/react-primitive': 2.0.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    optionalDependencies:
+      '@types/react': 18.3.12
+      '@types/react-dom': 18.3.1
 
   '@radix-ui/react-popover@1.1.2(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -8693,6 +8752,10 @@ snapshots:
       react: 18.3.1
       react-fast-compare: 3.2.2
       shallowequal: 1.1.0
+
+  react-hook-form@7.53.1(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   react-is@18.3.1: {}
 

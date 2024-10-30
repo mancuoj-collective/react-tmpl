@@ -9,7 +9,9 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "@hookform/resolvers": "latest",
     "@radix-ui/react-icons": "latest",
+    "@radix-ui/react-label": "latest",
     "@radix-ui/react-popover": "latest",
     "@radix-ui/react-slot": "latest",
     "@tanstack/react-query": "latest",
@@ -24,16 +26,19 @@
     "react": "latest",
     "react-dom": "latest",
     "react-helmet-async": "latest",
+    "react-hook-form": "latest",
     "react-router-dom": "latest",
     "react-spring": "latest",
     "tailwind-merge": "latest",
-    "tailwindcss-animate": "latest"
+    "tailwindcss-animate": "latest",
+    "zod": "latest"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "latest",
     "@fontsource-variable/fira-code": "latest",
     "@fontsource-variable/inter": "latest",
     "@fontsource-variable/lora": "latest",
+    "@iconify-json/devicon": "latest",
     "@iconify-json/tabler": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
