@@ -11,8 +11,7 @@ export function RootLayout({ defaultTheme, className, children }: RootLayoutProp
 
   return (
     <div
-      // eslint-disable-next-line tailwindcss/no-custom-classname
-      className={cn(`theme-${defaultTheme ?? config.theme}`, 'min-h-dvh font-sans antialiased', className)}
+      className={cn(`theme-${defaultTheme ?? config.theme}`, 'min-h-dvh font-inter antialiased', className)}
       style={{ '--radius': `${config.radius}rem` } as React.CSSProperties}
     >
       {children}

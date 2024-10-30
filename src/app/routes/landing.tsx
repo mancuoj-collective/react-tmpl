@@ -7,6 +7,20 @@ import { Cobe } from '@/components/ui/cobe'
 import Particles from '@/components/ui/particles'
 import { useDark } from '@/hooks/use-dark'
 
+export function LandingRoute() {
+  return (
+    <>
+      <Head description="Welcome to React Tmpl" />
+      <div className="flex flex-col">
+        <Header />
+        <div className="flex flex-1 flex-col items-center justify-center">
+          <Hero />
+        </div>
+      </div>
+    </>
+  )
+}
+
 function Hero() {
   const { isDark } = useDark()
   const navigate = useNavigate()
@@ -47,19 +61,5 @@ function Hero() {
         </Button>
       </div>
     </div>
-  )
-}
-
-export function LandingRoute() {
-  return (
-    <>
-      <Head description="Welcome to React Tmpl" />
-      <div className="flex flex-col">
-        <Header />
-        <div className="flex flex-1 flex-col items-center justify-center">
-          <Hero />
-        </div>
-      </div>
-    </>
   )
 }
