@@ -54,7 +54,7 @@ export function LandingRoute() {
   return (
     <>
       <Head description="Welcome to React Tmpl" />
-      <div className="flex min-h-screen flex-col">
+      <div className="flex flex-col">
         <Header />
         <div className="flex flex-1 flex-col items-center justify-center">
           <Hero />

@@ -4,6 +4,7 @@ import type { PropsWithChildren } from 'react'
 import { Suspense, useState } from 'react'
 import { HelmetProvider } from 'react-helmet-async'
 
+import { RootLayout } from '@/components/layout'
 import { Loader } from '@/components/ui/loader'
 import { queryConfig } from '@/lib/react-query'
 
@@ -17,9 +18,9 @@ export function AppProvider({ children }: PropsWithChildren) {
       <HelmetProvider>
         <QueryClientProvider client={queryClient}>
           {import.meta.env.DEV && <ReactQueryDevtools />}
-          <div className="font-inter antialiased">
+          <RootLayout>
             {children}
-          </div>
+          </RootLayout>
         </QueryClientProvider>
       </HelmetProvider>
     </Suspense>

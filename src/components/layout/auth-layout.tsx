@@ -1,14 +1,14 @@
-import type { PropsWithChildren } from 'react'
-
 import { Head } from '../seo'
-import { Header } from './header'
 
-export function AuthLayout({ children, title }: PropsWithChildren<{ title: string }>) {
+interface AuthLayoutProps extends React.ComponentProps<'div'> {
+  title: string
+}
+
+export function AuthLayout({ children, title }: AuthLayoutProps) {
   return (
     <div>
       <Head title={title} />
-      <div className="flex min-h-screen flex-col">
-        <Header />
+      <div className="flex min-h-dvh flex-col">
         <div className="flex flex-1 flex-col items-center justify-center">
           {children}
         </div>

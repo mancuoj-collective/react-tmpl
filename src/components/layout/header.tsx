@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 
 import { Button } from '../ui/button'
 import { DarkModeToggle } from '../ui/dark-mode-toggle'
+import { ThemeCustomizer } from '../ui/theme-customizer/theme-customizer'
 
 export function Header() {
   return (
@@ -11,7 +12,8 @@ export function Header() {
           <span className="i-tabler-brand-react text-xl" />
           React Tmpl
         </Link>
-        <div className="flex gap-0.5">
+        <div className="flex">
+          <ThemeCustomizer />
           <DarkModeToggle />
           <Button variant="ghost" size="icon" asChild>
             <a href="https://github.com/mancuoj-collective/react-tmpl" target="_blank" rel="noreferrer">
