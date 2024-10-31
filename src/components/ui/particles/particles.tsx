@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useEffect, useRef, useState } from 'react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/utils/cn'
 
 interface MousePosition {
   x: number
@@ -281,4 +281,4 @@ const Particles: React.FC<ParticlesProps> = ({
   )
 }
 
-export default Particles
+export { Particles }

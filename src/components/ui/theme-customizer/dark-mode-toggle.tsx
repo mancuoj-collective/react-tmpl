@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { useDark } from '@/hooks/use-dark'
-import { cn } from '@/lib/utils'
+import { cn } from '@/utils/cn'
 
 export function DarkModeToggle({ className = '' }: { className?: string }) {
   const { toggleDark } = useDark()

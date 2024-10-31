@@ -1,7 +1,9 @@
 import { useConfig } from '@/hooks/use-config'
 import { useDark } from '@/hooks/use-dark'
 import { builtinRadiuses, builtinThemes } from '@/lib/registry/theme'
-import { capitalize, cn, getActiveColor } from '@/lib/utils'
+import { cn } from '@/utils/cn'
+import { getActiveColor } from '@/utils/get-active-color'
+import { capitalize } from '@/utils/string'
 
 import { Button } from '../button'
 

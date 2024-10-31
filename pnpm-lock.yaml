@@ -32,15 +32,15 @@ importers:
       class-variance-authority:
         specifier: latest
         version: 0.7.0
-      clsx:
-        specifier: latest
-        version: 2.1.1
       cobe:
         specifier: latest
         version: 0.6.3
       foxact:
         specifier: latest
         version: 0.2.40(react@18.3.1)
+      framer-motion:
+        specifier: latest
+        version: 11.11.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       jotai:
         specifier: latest
         version: 2.10.1(@types/react@18.3.12)(react@18.3.1)
@@ -1898,8 +1898,8 @@ packages:
   '@types/node@22.8.1':
     resolution: {integrity: sha512-k6Gi8Yyo8EtrNtkHXutUu2corfDf9su95VYVP10aGYMMROM6SAItZi0w1XszA6RtWTHSVp5OeFof37w0IEqCQg==}
 
-  '@types/node@22.8.4':
-    resolution: {integrity: sha512-SpNNxkftTJOPk0oN+y2bIqurEXHTA2AOZ3EJDDKeJ5VzkvvORSvmQXGQarcOzWV1ac7DCaPBEdMDxBsM+d8jWw==}
+  '@types/node@22.8.5':
+    resolution: {integrity: sha512-5iYk6AMPtsMbkZqCO1UGF9W5L38twq11S2pYWkybGHH2ogPUvXWNlQqJBzuEZWKj/WRH+QTeiv6ySWqJtvIEgA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2286,10 +2286,6 @@ packages:
 
   clsx@2.0.0:
     resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
-    engines: {node: '>=6'}
-
-  clsx@2.1.1:
-    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
     engines: {node: '>=6'}
 
   cobe@0.6.3:
@@ -2806,6 +2802,20 @@ packages:
 
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
+
+  framer-motion@11.11.10:
+    resolution: {integrity: sha512-061Bt1jL/vIm+diYIiA4dP/Yld7vD47ROextS7ESBW5hr4wQFhxB5D5T5zAc3c/5me3cOa+iO5LqhA38WDln/A==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
 
   fresh@0.5.2:
     resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==}
@@ -5902,14 +5912,14 @@ snapshots:
     dependencies:
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
       jest-mock: 29.7.0
 
   '@jest/fake-timers@29.7.0':
     dependencies:
       '@jest/types': 29.6.3
       '@sinonjs/fake-timers': 10.3.0
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
       jest-message-util: 29.7.0
       jest-mock: 29.7.0
       jest-util: 29.7.0
@@ -5943,7 +5953,7 @@ snapshots:
       '@jest/schemas': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
       '@types/yargs': 17.0.33
       chalk: 4.1.2
 
@@ -6534,7 +6544,7 @@ snapshots:
 
   '@types/graceful-fs@4.1.9':
     dependencies:
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
 
   '@types/istanbul-lib-coverage@2.0.6': {}
 
@@ -6552,13 +6562,13 @@ snapshots:
 
   '@types/node-forge@1.3.11':
     dependencies:
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
 
   '@types/node@22.8.1':
     dependencies:
       undici-types: 6.19.8
 
-  '@types/node@22.8.4':
+  '@types/node@22.8.5':
     dependencies:
       undici-types: 6.19.8
 
@@ -6973,7 +6983,7 @@ snapshots:
 
   chrome-launcher@0.15.2:
     dependencies:
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
       escape-string-regexp: 4.0.0
       is-wsl: 2.2.0
       lighthouse-logger: 1.4.2
@@ -6982,7 +6992,7 @@ snapshots:
 
   chromium-edge-launcher@0.2.0:
     dependencies:
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
       escape-string-regexp: 4.0.0
       is-wsl: 2.2.0
       lighthouse-logger: 1.4.2
@@ -7029,8 +7039,6 @@ snapshots:
       shallow-clone: 3.0.1
 
   clsx@2.0.0: {}
-
-  clsx@2.1.1: {}
 
   cobe@0.6.3:
     dependencies:
@@ -7701,6 +7709,13 @@ snapshots:
 
   fraction.js@4.3.7: {}
 
+  framer-motion@11.11.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      tslib: 2.8.0
+    optionalDependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   fresh@0.5.2: {}
 
   fs.realpath@1.0.0: {}
@@ -7958,7 +7973,7 @@ snapshots:
       '@jest/environment': 29.7.0
       '@jest/fake-timers': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
       jest-mock: 29.7.0
       jest-util: 29.7.0
 
@@ -7968,7 +7983,7 @@ snapshots:
     dependencies:
       '@jest/types': 29.6.3
       '@types/graceful-fs': 4.1.9
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -7995,7 +8010,7 @@ snapshots:
   jest-mock@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
       jest-util: 29.7.0
 
   jest-regex-util@29.6.3: {}
@@ -8003,7 +8018,7 @@ snapshots:
   jest-util@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -8020,7 +8035,7 @@ snapshots:
 
   jest-worker@29.7.0:
     dependencies:
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
       jest-util: 29.7.0
       merge-stream: 2.0.0
       supports-color: 8.1.1

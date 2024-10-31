@@ -1,6 +1,6 @@
 import { useConfig } from '@/hooks/use-config'
 import type { Theme } from '@/lib/registry/theme'
-import { cn } from '@/lib/utils'
+import { cn } from '@/utils/cn'
 
 interface RootLayoutProps extends React.ComponentProps<'div'> {
   defaultTheme?: Theme['name']

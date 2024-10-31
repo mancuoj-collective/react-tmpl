@@ -4,7 +4,7 @@ import { Header } from '@/components/layout'
 import { Head } from '@/components/seo'
 import { Button } from '@/components/ui/button'
 import { Cobe } from '@/components/ui/cobe'
-import Particles from '@/components/ui/particles'
+import { Particles } from '@/components/ui/particles'
 import { useDark } from '@/hooks/use-dark'
 
 export function LandingRoute() {

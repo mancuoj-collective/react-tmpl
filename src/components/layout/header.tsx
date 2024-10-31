@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 
-import { Button } from '../ui/button'
-import { DarkModeToggle } from '../ui/dark-mode-toggle'
-import { ThemePopover } from '../ui/theme-customizer'
+import { Button } from '@/components/ui/button'
+import { ThemePopover } from '@/components/ui/theme-customizer'
+import { DarkModeToggle } from '@/components/ui/theme-customizer/dark-mode-toggle'
 
 export function Header() {
   return (

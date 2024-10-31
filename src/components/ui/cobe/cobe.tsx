@@ -3,7 +3,7 @@ import createGlobe from 'cobe'
 import { useEffect, useRef } from 'react'
 import { useSpring } from 'react-spring'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/utils/cn'
 
 type GlobeProps = {
   className?: string

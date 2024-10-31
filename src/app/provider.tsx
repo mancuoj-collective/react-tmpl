@@ -5,7 +5,7 @@ import { Suspense, useState } from 'react'
 import { HelmetProvider } from 'react-helmet-async'
 
 import { RootLayout } from '@/components/layout'
-import { Loader } from '@/components/ui/loader'
+import { ScreenLoader } from '@/components/ui/screen-loader'
 import { queryConfig } from '@/lib/react-query'
 
 export function AppProvider({ children }: PropsWithChildren) {
@@ -14,7 +14,7 @@ export function AppProvider({ children }: PropsWithChildren) {
   }))
 
   return (
-    <Suspense fallback={<Loader />}>
+    <Suspense fallback={<ScreenLoader />}>
       <HelmetProvider>
         <QueryClientProvider client={queryClient}>
           {import.meta.env.DEV && <ReactQueryDevtools />}

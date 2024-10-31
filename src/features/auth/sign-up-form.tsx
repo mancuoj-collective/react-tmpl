@@ -1,7 +1,6 @@
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { Link } from 'react-router-dom'
 import { z } from 'zod'
 
 import { Button } from '@/components/ui/button'
@@ -15,6 +14,9 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { TextSeparator } from '@/components/ui/text-seperator'
+
+import { Loader } from './loader'
+import { RouterLink } from './router-link'
 
 const formSchema = z.object({
   firstName: z.string().optional(),
@@ -90,25 +92,17 @@ export function SignUpForm() {
             )}
           />
           <Button type="submit" className="w-full" disabled={isLoading}>
-            {isLoading && <span className="i-tabler-loader size-4 animate-spin" />}
+            {isLoading && <Loader />}
             Continue
           </Button>
           <TextSeparator text="or" />
           <div className="space-y-2.5">
             <Button type="submit" variant="outline" className="w-full" disabled={isLoading}>
-              {isLoading ? (
-                <span className="i-tabler-loader size-4 animate-spin" />
-              ) : (
-                <span className="i-devicon-google size-4" />
-              )}
+              {isLoading ? <Loader /> : <span className="i-devicon-google size-4" />}
               Continue with Google
             </Button>
             <Button type="submit" variant="outline" className="w-full" disabled={isLoading}>
-              {isLoading ? (
-                <span className="i-tabler-loader size-4 animate-spin" />
-              ) : (
-                <span className="i-devicon-github size-4 dark:invert" />
-              )}
+              {isLoading ? <Loader /> : <span className="i-devicon-github size-4 dark:invert" />}
               Continue with GitHub
             </Button>
           </div>
@@ -117,7 +111,7 @@ export function SignUpForm() {
       <p className="mt-8 text-center text-sm text-muted-foreground">
         Already have an account?
         {' '}
-        <Link to="/auth/sign-in" className="text-primary hover:underline">Sign in</Link>
+        <RouterLink to="/auth/sign-in">Sign in</RouterLink>
       </p>
     </div>
   )
