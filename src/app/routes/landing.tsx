@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 
 import { Header } from '@/components/layout'
@@ -46,9 +47,14 @@ function Hero() {
       <span
         className="fixed top-0 -z-10 h-screen w-full bg-background/50"
       />
-      <h1 className="mb-6 text-center font-lora text-3xl font-bold">
+      <motion.h1
+        initial={{ filter: 'blur(10px)', opacity: 0 }}
+        animate={{ filter: 'blur(0px)', opacity: 1 }}
+        transition={{ duration: 1.2 }}
+        className="mb-6 text-center font-lora text-3xl font-bold"
+      >
         The Latest React Starter Template
-      </h1>
+      </motion.h1>
       <div className="flex items-center gap-2">
         <Button onClick={handleStart}>
           Get Started

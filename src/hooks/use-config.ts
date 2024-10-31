@@ -8,11 +8,15 @@ type Config = {
   radius: number
 }
 
-const configAtom = atomWithStorage<Config>('tmpl:config', {
+const defaultConfig: Config = {
   theme: 'zinc',
   radius: 0.5,
-})
+}
 
-export function useConfig() {
+const configAtom = atomWithStorage<Config>('tmpl:config', defaultConfig)
+
+function useConfig() {
   return useAtom(configAtom)
 }
+
+export { defaultConfig, useConfig }

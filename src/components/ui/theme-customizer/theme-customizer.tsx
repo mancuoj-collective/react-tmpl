@@ -6,6 +6,7 @@ import { getActiveColor } from '@/utils/get-active-color'
 import { capitalize } from '@/utils/string'
 
 import { Button } from '../button'
+import { Reset } from './reset'
 
 export function ThemeCustomizer() {
   const [config, setConfig] = useConfig()
@@ -13,11 +14,14 @@ export function ThemeCustomizer() {
 
   return (
     <div className="grid gap-5 font-inter md:p-2">
-      <div className="space-y-1">
-        <h1 className="font-semibold">Customize</h1>
-        <p className="text-xs text-muted-foreground">
-          Pick a style and color for the template.
-        </p>
+      <div className="flex items-center justify-between">
+        <div className="space-y-1">
+          <h1 className="font-semibold">Customize</h1>
+          <p className="text-xs text-muted-foreground">
+            Pick a style and color for the template.
+          </p>
+        </div>
+        <Reset />
       </div>
       <div className="space-y-2">
         <h2 className="text-sm font-medium">Color</h2>
@@ -69,9 +73,7 @@ export function ThemeCustomizer() {
           <Button
             variant="outline"
             size="sm"
-            onClick={() => {
-              isDark && toggleDark()
-            }}
+            onClick={() => { isDark && toggleDark() }}
             className={cn('justify-start', !isDark && 'border-2 border-primary')}
           >
             <span className="i-tabler-sun flex size-5 shrink-0 items-center justify-center" />
@@ -80,9 +82,7 @@ export function ThemeCustomizer() {
           <Button
             variant="outline"
             size="sm"
-            onClick={() => {
-              !isDark && toggleDark()
-            }}
+            onClick={() => { !isDark && toggleDark() }}
             className={cn('justify-start', isDark && 'border-2 border-primary')}
           >
             <span className="i-tabler-moon flex size-4 shrink-0 items-center justify-center" />
