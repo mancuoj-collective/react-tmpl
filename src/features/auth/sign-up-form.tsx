@@ -14,6 +14,7 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { TextSeparator } from '@/components/ui/text-seperator'
+import { paths } from '@/config/paths'
 
 import { Loader } from './loader'
 import { RouterLink } from './router-link'
@@ -111,7 +112,7 @@ export function SignUpForm() {
       <p className="mt-8 text-center text-sm text-muted-foreground">
         Already have an account?
         {' '}
-        <RouterLink to="/auth/sign-in">Sign in</RouterLink>
+        <RouterLink to={paths.auth.signIn}>Sign in</RouterLink>
       </p>
     </>
   )
