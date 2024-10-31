@@ -1,6 +1,7 @@
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { useNavigate } from 'react-router-dom'
 import { z } from 'zod'
 
 import { Button } from '@/components/ui/button'
@@ -28,6 +29,7 @@ const formSchema = z.object({
 })
 
 export function SignUpForm() {
+  const navigate = useNavigate()
   const [isLoading, setIsLoading] = useState(false)
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -44,14 +46,15 @@ export function SignUpForm() {
 
     setTimeout(() => {
       setIsLoading(false)
-    }, 2000)
+      navigate(paths.dashboard.overview)
+    }, 500)
   }
 
   return (
-    <>
+    <div className="w-full rounded-[--radius] border bg-background p-4 shadow-sm md:p-10">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
-          <div className="flex gap-2">
+          <div className="flex gap-2.5">
             <FormField
               control={form.control}
               name="firstName"
@@ -114,6 +117,6 @@ export function SignUpForm() {
         {' '}
         <RouterLink to={paths.auth.signIn}>Sign in</RouterLink>
       </p>
-    </>
+    </div>
   )
 }

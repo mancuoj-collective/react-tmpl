@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { NuqsAdapter } from 'nuqs/adapters/react-router'
 import type { PropsWithChildren } from 'react'
 import { Suspense, useState } from 'react'
 import { HelmetProvider } from 'react-helmet-async'
@@ -16,12 +17,14 @@ export function AppProvider({ children }: PropsWithChildren) {
   return (
     <Suspense fallback={<ScreenLoader />}>
       <HelmetProvider>
-        <QueryClientProvider client={queryClient}>
-          {import.meta.env.DEV && <ReactQueryDevtools />}
-          <RootLayout>
-            {children}
-          </RootLayout>
-        </QueryClientProvider>
+        <NuqsAdapter>
+          <QueryClientProvider client={queryClient}>
+            {import.meta.env.DEV && <ReactQueryDevtools />}
+            <RootLayout>
+              {children}
+            </RootLayout>
+          </QueryClientProvider>
+        </NuqsAdapter>
       </HelmetProvider>
     </Suspense>
   )

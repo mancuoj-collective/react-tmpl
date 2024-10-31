@@ -23,6 +23,7 @@
     "jotai": "latest",
     "jotai-dark": "latest",
     "jotai-effect": "latest",
+    "nuqs": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet-async": "latest",

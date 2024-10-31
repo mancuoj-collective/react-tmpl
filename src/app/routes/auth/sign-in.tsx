@@ -1,5 +1,5 @@
 import { AuthLayout } from '@/components/layout'
-import { SignInForm } from '@/features/auth/sign-in-form'
+import { SignInForm } from '@/features/auth/components/sign-in-form'
 
 export function SignInRoute() {
   return (
