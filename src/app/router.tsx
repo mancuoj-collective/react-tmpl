@@ -42,7 +42,13 @@ function createAppRouter(_queryClient: QueryClient) {
         return { Component: OverviewRoute }
       },
     },
-
+    {
+      path: paths.auth.resetPassword,
+      lazy: async () => {
+        const { ResetPasswordRoute } = await import('./routes/auth/reset-password')
+        return { Component: ResetPasswordRoute }
+      },
+    },
   ])
 }
 

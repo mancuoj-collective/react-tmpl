@@ -14,8 +14,7 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form'
-import { PasswordInput } from '@/components/ui/password-input'
-import { TextSeparator } from '@/components/ui/text-seperator'
+import { Input } from '@/components/ui/input'
 import { paths } from '@/config/paths'
 
 import { serialize } from '../utils/serilize'
@@ -24,10 +23,9 @@ import { RouterLinkMuted } from './router-link'
 
 const formSchema = z.object({
   email: z.string().email(),
-  password: z.string().min(1, { message: 'Please enter your password' }),
 })
 
-export function PasswordForm() {
+export function ResetPasswordForm() {
   const navigate = useNavigate()
   const [isLoading, setIsLoading] = useState(false)
   const [email] = useQueryState('email', parseAsString)
@@ -36,7 +34,6 @@ export function PasswordForm() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       email: email ?? '',
-      password: '',
     },
   })
 
@@ -61,25 +58,7 @@ export function PasswordForm() {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <p className="text-muted-foreground">{field.value}</p>
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="password"
-              render={({ field }) => (
-                <FormItem>
-                  <div className="flex justify-between">
-                    <FormLabel>Password</FormLabel>
-                    <RouterLinkMuted to={paths.auth.resetPassword + serialize({ email })}>
-                      Forgot your password?
-                    </RouterLinkMuted>
-                  </div>
-                  <FormControl>
-                    <PasswordInput placeholder="Your password" {...field} />
+                    <Input placeholder="Your email address" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -87,17 +66,10 @@ export function PasswordForm() {
             />
             <Button type="submit" className="w-full" disabled={isLoading}>
               {isLoading && <Loader />}
-              Sign in
+              Send reset instructions
             </Button>
           </form>
         </Form>
-        <TextSeparator text="or" />
-        <div className="space-y-2.5">
-          <Button type="button" variant="outline" className="w-full">
-            <span className="i-tabler-mail size-4" />
-            Email sign-in code
-          </Button>
-        </div>
       </div>
 
       <RouterLinkMuted
@@ -105,7 +77,7 @@ export function PasswordForm() {
         className="mt-5 flex items-center justify-center gap-1.5"
       >
         <span className="i-tabler-chevron-left" />
-        Go back
+        Back to sign-in
       </RouterLinkMuted>
     </>
   )
