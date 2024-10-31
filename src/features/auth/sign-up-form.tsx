@@ -47,7 +47,7 @@ export function SignUpForm() {
   }
 
   return (
-    <div className="w-full rounded border p-4 shadow-sm md:p-10">
+    <>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
           <div className="flex gap-2">
@@ -113,6 +113,6 @@ export function SignUpForm() {
         {' '}
         <RouterLink to="/auth/sign-in">Sign in</RouterLink>
       </p>
-    </div>
+    </>
   )
 }

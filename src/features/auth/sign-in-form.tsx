@@ -43,7 +43,7 @@ export function SignInForm() {
   }
 
   return (
-    <div className="w-full rounded-[--radius] border p-4 shadow-sm md:p-10">
+    <>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
           <FormField
@@ -81,6 +81,6 @@ export function SignInForm() {
         {' '}
         <RouterLink to="/auth/sign-up">Sign up</RouterLink>
       </p>
-    </div>
+    </>
   )
 }
