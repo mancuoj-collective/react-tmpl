@@ -46,7 +46,7 @@ export function SignUpForm() {
 
     setTimeout(() => {
       setIsLoading(false)
-      navigate(paths.dashboard.overview)
+      navigate(paths.dashboard.overview.getHref())
     }, 500)
   }
 
@@ -115,7 +115,7 @@ export function SignUpForm() {
       <p className="mt-8 text-center text-sm text-muted-foreground">
         Already have an account?
         {' '}
-        <RouterLink to={paths.auth.signIn}>Sign in</RouterLink>
+        <RouterLink to={paths.auth.signIn.getHref()}>Sign in</RouterLink>
       </p>
     </div>
   )

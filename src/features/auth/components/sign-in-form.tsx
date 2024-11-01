@@ -45,7 +45,7 @@ export function SignInForm() {
 
     setTimeout(() => {
       setIsLoading(false)
-      navigate(paths.auth.password + serialize(values))
+      navigate(paths.auth.password.getHref() + serialize(values))
     }, 500)
   }
 
@@ -54,7 +54,7 @@ export function SignInForm() {
 
     setTimeout(() => {
       setIsLoading(false)
-      navigate(paths.dashboard.overview)
+      navigate(paths.dashboard.overview.getHref())
     }, 500)
   }
 
@@ -95,7 +95,7 @@ export function SignInForm() {
       <p className="mt-8 text-center text-sm text-muted-foreground">
         Don't have an account?
         {' '}
-        <RouterLink to={paths.auth.signUp}>Sign up</RouterLink>
+        <RouterLink to={paths.auth.signUp.getHref()}>Sign up</RouterLink>
       </p>
     </div>
   )

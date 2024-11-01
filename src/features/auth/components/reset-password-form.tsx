@@ -42,7 +42,7 @@ export function ResetPasswordForm() {
 
     setTimeout(() => {
       setIsLoading(false)
-      navigate(paths.dashboard.overview)
+      navigate(paths.dashboard.overview.getHref())
     }, 500)
   }
 
@@ -73,7 +73,7 @@ export function ResetPasswordForm() {
       </div>
 
       <RouterLinkMuted
-        to={paths.auth.signIn + serialize({ email })}
+        to={paths.auth.signIn.getHref() + serialize({ email })}
         className="mt-5 flex items-center justify-center gap-1.5"
       >
         <span className="i-tabler-chevron-left" />

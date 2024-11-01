@@ -32,7 +32,7 @@ export function VerifyEmailForm() {
 
   function onSubmit(_values: z.infer<typeof formSchema>) {
     setTimeout(() => {
-      navigate(paths.dashboard.overview)
+      navigate(paths.dashboard.overview.getHref())
     }, 1000)
   }
 

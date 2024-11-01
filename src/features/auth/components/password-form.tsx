@@ -45,7 +45,7 @@ export function PasswordForm() {
 
     setTimeout(() => {
       setIsLoading(false)
-      navigate(paths.dashboard.overview)
+      navigate(paths.dashboard.overview.getHref())
     }, 500)
   }
 
@@ -74,7 +74,7 @@ export function PasswordForm() {
                 <FormItem>
                   <div className="flex justify-between">
                     <FormLabel>Password</FormLabel>
-                    <RouterLinkMuted to={paths.auth.resetPassword + serialize({ email })}>
+                    <RouterLinkMuted to={paths.auth.resetPassword.getHref() + serialize({ email })}>
                       Forgot your password?
                     </RouterLinkMuted>
                   </div>
@@ -98,7 +98,7 @@ export function PasswordForm() {
             variant="outline"
             className="w-full"
             onClick={() => {
-              navigate(paths.auth.verifyEmail + serialize({ email }))
+              navigate(paths.auth.verifyEmail.getHref() + serialize({ email }))
             }}
           >
             <span className="i-tabler-mail size-4" />
@@ -108,7 +108,7 @@ export function PasswordForm() {
       </div>
 
       <RouterLinkMuted
-        to={paths.auth.signIn + serialize({ email })}
+        to={paths.auth.signIn.getHref() + serialize({ email })}
         className="mt-5 flex items-center justify-center gap-1.5"
       >
         <span className="i-tabler-chevron-left" />
