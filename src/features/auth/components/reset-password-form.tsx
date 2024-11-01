@@ -48,7 +48,7 @@ export function ResetPasswordForm() {
 
   return (
     <>
-      <div className="w-full rounded-[--radius] border bg-background p-4 shadow-sm md:p-10">
+      <div className="w-full rounded-[--radius] border bg-background p-6 shadow-sm md:p-10">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
             <FormField

@@ -51,7 +51,7 @@ export function PasswordForm() {
 
   return (
     <>
-      <div className="w-full rounded-[--radius] border bg-background p-4 shadow-sm md:p-10">
+      <div className="w-full rounded-[--radius] border bg-background p-6 shadow-sm md:p-10">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
             <FormField
@@ -93,7 +93,14 @@ export function PasswordForm() {
         </Form>
         <TextSeparator text="or" />
         <div className="space-y-2.5">
-          <Button type="button" variant="outline" className="w-full">
+          <Button
+            type="button"
+            variant="outline"
+            className="w-full"
+            onClick={() => {
+              navigate(paths.auth.verifyEmail + serialize({ email }))
+            }}
+          >
             <span className="i-tabler-mail size-4" />
             Email sign-in code
           </Button>

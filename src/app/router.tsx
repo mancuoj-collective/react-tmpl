@@ -49,6 +49,13 @@ function createAppRouter(_queryClient: QueryClient) {
         return { Component: ResetPasswordRoute }
       },
     },
+    {
+      path: paths.auth.verifyEmail,
+      lazy: async () => {
+        const { VerifyEmailRoute } = await import('./routes/auth/verify-email')
+        return { Component: VerifyEmailRoute }
+      },
+    },
   ])
 }
 
