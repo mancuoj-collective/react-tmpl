@@ -50,7 +50,7 @@ function Hero() {
       <motion.h1
         initial={{ filter: 'blur(10px)', opacity: 0 }}
         animate={{ filter: 'blur(0px)', opacity: 1 }}
-        transition={{ duration: 1.2 }}
+        transition={{ duration: 1 }}
         className="mb-6 text-center font-lora text-3xl font-bold"
       >
         The Latest React Starter Template

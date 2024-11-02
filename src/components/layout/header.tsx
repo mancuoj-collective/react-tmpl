@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 
-import { Button } from '@/components/ui/button'
 import { ThemePopover } from '@/components/ui/theme-customizer'
 import { DarkModeToggle } from '@/components/ui/theme-customizer/dark-mode-toggle'
 import { paths } from '@/config/paths'
+
+import { GithubLink } from '../ui/github-link'
 
 export function Header() {
   return (
@@ -16,11 +17,7 @@ export function Header() {
         <div className="flex">
           <ThemePopover />
           <DarkModeToggle />
-          <Button variant="ghost" size="icon" asChild>
-            <a href="https://github.com/mancuoj" target="_blank" rel="noreferrer">
-              <div className="i-tabler-brand-github text-lg" />
-            </a>
-          </Button>
+          <GithubLink />
         </div>
       </div>
     </header>

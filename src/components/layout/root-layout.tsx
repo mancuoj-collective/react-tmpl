@@ -11,7 +11,7 @@ export function RootLayout({ defaultTheme, className, children }: RootLayoutProp
 
   return (
     <div
-      className={cn(`theme-${defaultTheme ?? config.theme}`, 'min-h-dvh font-inter antialiased', className)}
+      className={cn(`theme-${defaultTheme ?? config.theme}`, 'min-h-svh font-inter antialiased', className)}
       style={{ '--radius': `${config.radius}rem` } as React.CSSProperties}
     >
       {children}
