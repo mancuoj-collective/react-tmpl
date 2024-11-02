@@ -3,12 +3,14 @@ import { useQueryClient } from '@tanstack/react-query'
 import { useMemo } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
+import { RouterErrorBoundary } from '@/components/error/router-error-boundary'
 import { paths } from '@/config/paths'
 
 function createAppRouter(_queryClient: QueryClient) {
   return createBrowserRouter([
     {
       path: paths.landing.path,
+      errorElement: <RouterErrorBoundary />,
       lazy: async () => {
         const { LandingRoute } = await import('./routes/landing')
         return { Component: LandingRoute }
@@ -16,6 +18,7 @@ function createAppRouter(_queryClient: QueryClient) {
     },
     {
       path: paths.auth.root,
+      errorElement: <RouterErrorBoundary />,
       children: [
         {
           path: paths.auth.signIn.path,
@@ -56,6 +59,7 @@ function createAppRouter(_queryClient: QueryClient) {
     },
     {
       path: paths.dashboard.root,
+      errorElement: <RouterErrorBoundary />,
       children: [
         {
           path: paths.dashboard.overview.path,
