@@ -1,3 +1,4 @@
+import { Separator } from '@/components/ui/separator'
 import {
   Sidebar,
   SidebarContent,
@@ -14,9 +15,11 @@ export function DashboardSidebar({ ...props }: React.ComponentProps<typeof Sideb
       <SidebarHeader>
         <SidebarHeaderMenu />
       </SidebarHeader>
+      <Separator className="my-4" />
       <SidebarContent>
         <div />
       </SidebarContent>
+      <Separator className="my-4" />
       <SidebarFooter>
         <SidebarFooterUser />
       </SidebarFooter>
