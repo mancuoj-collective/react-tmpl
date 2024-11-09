@@ -29,4 +29,9 @@ function capitalize<T extends string>(str: T): Capitalize<T> {
   return upperFirst(str.toLowerCase()) as Capitalize<T>
 }
 
-export { capitalize, clsx, getWords, upperFirst }
+export {
+  capitalize,
+  clsx,
+  getWords,
+  upperFirst,
+}

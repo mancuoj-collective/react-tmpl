@@ -9,16 +9,16 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
-    "@hookform/resolvers": "latest",
+    "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-avatar": "latest",
     "@radix-ui/react-collapsible": "latest",
     "@radix-ui/react-dialog": "latest",
     "@radix-ui/react-dropdown-menu": "latest",
     "@radix-ui/react-icons": "latest",
-    "@radix-ui/react-label": "latest",
+    "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-popover": "latest",
     "@radix-ui/react-separator": "latest",
-    "@radix-ui/react-slot": "latest",
+    "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tooltip": "latest",
     "@tanstack/react-query": "latest",
     "@tanstack/react-query-devtools": "latest",
@@ -36,12 +36,12 @@
     "react": "latest",
     "react-dom": "latest",
     "react-helmet-async": "latest",
-    "react-hook-form": "latest",
+    "react-hook-form": "^7.53.1",
     "react-router-dom": "latest",
     "react-spring": "latest",
     "tailwind-merge": "latest",
     "tailwindcss-animate": "latest",
-    "zod": "latest"
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "latest",
