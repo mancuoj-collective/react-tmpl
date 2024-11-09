@@ -41,6 +41,7 @@
     "react-spring": "latest",
     "tailwind-merge": "latest",
     "tailwindcss-animate": "latest",
+    "tailwindcss-motion": "latest",
     "zod": "^3.23.8"
   },
   "devDependencies": {
