@@ -29,4 +29,4 @@ export function sideCannons(seconds = 3) {
   }
 
   frame()
-};
+}
