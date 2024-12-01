@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@9.14.4",
   "scripts": {
     "build": "tsc -b && vite build",
     "dev": "vite",
@@ -9,16 +9,16 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
-    "@hookform/resolvers": "^3.9.1",
+    "@hookform/resolvers": "latest",
     "@radix-ui/react-avatar": "latest",
     "@radix-ui/react-collapsible": "latest",
     "@radix-ui/react-dialog": "latest",
     "@radix-ui/react-dropdown-menu": "latest",
     "@radix-ui/react-icons": "latest",
-    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-label": "latest",
     "@radix-ui/react-popover": "latest",
     "@radix-ui/react-separator": "latest",
-    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-slot": "latest",
     "@radix-ui/react-tooltip": "latest",
     "@tanstack/react-query": "latest",
     "@tanstack/react-query-devtools": "latest",
@@ -36,13 +36,13 @@
     "react": "latest",
     "react-dom": "latest",
     "react-helmet-async": "latest",
-    "react-hook-form": "^7.53.1",
+    "react-hook-form": "latest",
     "react-router-dom": "latest",
     "react-spring": "latest",
     "tailwind-merge": "latest",
     "tailwindcss-animate": "latest",
     "tailwindcss-motion": "latest",
-    "zod": "^3.23.8"
+    "zod": "latest"
   },
   "devDependencies": {
     "@egoist/tailwindcss-icons": "latest",
