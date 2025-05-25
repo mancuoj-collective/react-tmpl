@@ -1,8 +1,0 @@
-{
-  "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "bradlc.vscode-tailwindcss",
-    "hyoban.tailwindcss-classname-highlight",
-    "antfu.iconify"
-  ]
-}
