@@ -12,7 +12,7 @@ const queryClient = new QueryClient()
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider storageKey="react-tmpl-lite-theme" attribute="class">
+      <ThemeProvider storageKey="react-tmpl-lite-theme" attribute="class" disableTransitionOnChange>
         <BrowserRouter>
           <Routes>
             <Route index element={<App />} />

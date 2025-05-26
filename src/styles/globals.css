@@ -195,3 +195,39 @@
     letter-spacing: var(--tracking-normal);
   }
 }
+
+/* selection */
+::-moz-selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+/* view transition */
+::view-transition-group(root) {
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+::view-transition-new(root) {
+  animation-name: reveal;
+}
+
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+  z-index: -1;
+  animation: none;
+}
+
+@keyframes reveal {
+  from {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
+  }
+  to {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}

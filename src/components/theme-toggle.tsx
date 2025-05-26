@@ -2,10 +2,17 @@ import { useTheme } from 'next-themes'
 import { Button } from './ui/button'
 
 export function ThemeToggle() {
-  const { setTheme, resolvedTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
 
-  const toggleTheme = () => {
+  function switchTheme() {
     setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
+  }
+
+  function toggleTheme() {
+    if (!document.startViewTransition) {
+      switchTheme()
+    }
+    document.startViewTransition(switchTheme)
   }
 
   return (
