@@ -9,7 +9,7 @@ export function App() {
         <div className="flex gap-2">
           <ThemeToggle />
           <Button variant="outline" size="icon">
-            <a className="iconify carbon--logo-github size-4.5" href="https://github.com/mancuoj-collective/react-tmpl-lite" />
+            <a className="iconify carbon--logo-github size-4.5" href="https://github.com/mancuoj-collective/react-tmpl" />
           </Button>
         </div>
         <TwScreenIndicator />
