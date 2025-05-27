@@ -1,6 +1,7 @@
 import { ThemeToggle } from '@/components/theme-toggle'
 import { TwScreenIndicator } from '@/components/tw-screen-indicator'
 import { Button } from '@/components/ui/button'
+import { Toaster } from '@/components/ui/sonner'
 
 export function App() {
   return (
@@ -12,6 +13,7 @@ export function App() {
             <a className="iconify carbon--logo-github size-4.5" href="https://github.com/mancuoj-collective/react-tmpl" />
           </Button>
         </div>
+        <Toaster richColors />
         <TwScreenIndicator />
       </div>
     </div>
