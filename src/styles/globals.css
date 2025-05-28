@@ -209,12 +209,16 @@
 
 /* view transition */
 ::view-transition-group(root) {
-  animation-duration: 0.6s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in;
 }
 
 ::view-transition-new(root) {
-  animation-name: reveal;
+  animation-name: reveal-up;
+}
+
+.dark::view-transition-new(root) {
+  animation-name: reveal-down;
 }
 
 ::view-transition-old(root),
@@ -223,9 +227,18 @@
   animation: none;
 }
 
-@keyframes reveal {
+@keyframes reveal-up {
   from {
-    clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes reveal-down {
+  from {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
   }
   to {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
