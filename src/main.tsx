@@ -4,6 +4,8 @@ import { ThemeProvider } from 'next-themes'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
+import { Toaster } from 'sonner'
+import { TwScreenIndicator } from '@/components/tw-screen-indicator'
 import { App } from '@/pages'
 import '@/styles/globals.css'
 
@@ -19,6 +21,8 @@ createRoot(document.getElementById('root')!).render(
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </BrowserRouter>
+        <Toaster richColors />
+        <TwScreenIndicator />
       </ThemeProvider>
       <ReactQueryDevtools />
     </QueryClientProvider>
