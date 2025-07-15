@@ -4,7 +4,7 @@ import { ThemeProvider } from 'next-themes'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
 import { Toaster } from 'sonner'
 import { TwScreenIndicator } from '@/components/tw-screen-indicator'
-import { Home } from '@/pages/home'
+import { Home } from '@/routes/home'
 
 const queryClient = new QueryClient()
 
