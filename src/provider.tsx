@@ -4,11 +4,11 @@ import { ThemeProvider } from 'next-themes'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
 import { Toaster } from 'sonner'
 import { TwScreenIndicator } from '@/components/tw-screen-indicator'
-import { Home } from '@/routes/home'
+import { HomePage } from '@/routes/home'
 
 const queryClient = new QueryClient()
 
-export function App() {
+export function Provider() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider
@@ -18,7 +18,7 @@ export function App() {
       >
         <BrowserRouter>
           <Routes>
-            <Route index element={<Home />} />
+            <Route index element={<HomePage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </BrowserRouter>
