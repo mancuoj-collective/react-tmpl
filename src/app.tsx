@@ -1,7 +1,7 @@
 import { ThemeToggle } from '@/components/theme-toggle'
 import { Button } from '@/components/ui/button'
 
-export function HomePage() {
+export function App() {
   return (
     <div className="relative font-sans antialiased">
       <div className="flex flex-col items-center justify-center min-h-svh">

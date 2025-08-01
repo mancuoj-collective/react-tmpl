@@ -1,15 +1,16 @@
-@import './view-transition.css';
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import '@fontsource-variable/dm-sans';
-@import '@fontsource-variable/source-serif-4';
-@import '@fontsource-variable/jetbrains-mono';
 
 @plugin "@iconify/tailwind4" {
   prefixes: carbon;
 }
 
 @custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'DM Sans Variable', sans-serif;
+}
 
 :root {
   --background: oklch(0.9911 0 0);
@@ -44,9 +45,6 @@
   --sidebar-accent-foreground: oklch(0.2435 0 0);
   --sidebar-border: oklch(0.9037 0 0);
   --sidebar-ring: oklch(0.8348 0.1302 160.908);
-  --font-sans: 'DM Sans Variable', sans-serif;
-  --font-serif: 'Source Serif 4 Variable', serif;
-  --font-mono: 'JetBrains Mono Variable', monospace;
   --radius: 0.5rem;
   --shadow-2xs: 0px 1px 3px 0px hsl(0 0% 0% / 0.09);
   --shadow-xs: 0px 1px 3px 0px hsl(0 0% 0% / 0.09);

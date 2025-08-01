@@ -4,15 +4,8 @@ import { Button } from './ui/button'
 export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme()
 
-  function switchTheme() {
-    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
-  }
-
   function toggleTheme() {
-    if (!document.startViewTransition) {
-      switchTheme()
-    }
-    document.startViewTransition(switchTheme)
+    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
   }
 
   return (
