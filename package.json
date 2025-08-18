@@ -29,7 +29,7 @@
     "@iconify-json/carbon": "^1.2.13",
     "@iconify/tailwind4": "^1.0.6",
     "@tanstack/react-query-devtools": "^5.85.3",
-    "@types/node": "^22.17.2",
+    "@types/node": "^24.3.0",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
