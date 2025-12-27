@@ -1,9 +1,7 @@
-import { Button } from './components/ui/button'
+import { ComponentExample } from '@/components/component-example'
 
 export function App() {
-  return (
-    <div className="flex flex-col items-center justify-center h-svh">
-      <Button size="xl">react-tmpl</Button>
-    </div>
-  )
+  return <ComponentExample />
 }
+
+export default App
